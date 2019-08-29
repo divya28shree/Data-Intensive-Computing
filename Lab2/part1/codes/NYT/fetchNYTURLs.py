@@ -17,7 +17,7 @@ def daterange(start_date, end_date):
 
 
 json_file_path = '/home/divya/Desktop/DIC/Lab2/NYT/data'
-api_key = 'PI2Cv5xyP9kWb3emUuSTNIylwcw9by0O'
+api_key = 'API Key for NYT'
 start = datetime.date(2019, 1, 1)
 end = datetime.date(2019, 4, 20)
 query = 'cathedral'
