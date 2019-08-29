@@ -1,0 +1,10 @@
+lyric	444
+song	98
+like	49
+architect	38
+love	35
+photo	33
+one	29
+really	26
+poet	24
+music	24
