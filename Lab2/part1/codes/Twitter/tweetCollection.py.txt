@@ -1,0 +1,52 @@
+import tweepy
+from tweepy import Stream
+from tweepy.streaming import StreamListener
+import json
+
+# import datetime
+# Twitter API credentials
+consumer_key = "consumer key"
+consumer_secret = "consumer secret key"
+access_key = "access key"
+access_secret = "access secret key"
+
+# Creating the authentication object
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+
+# Setting your access token and secret
+auth.set_access_token(access_key, access_secret)
+
+# Creating the API object while passing in auth information
+api = tweepy.API(auth)
+
+tag = 'author'
+class Mylistener(StreamListener):
+    def on_data(self, data):
+        try:
+            with open('/home/divya/Desktop/DIC/Lab2/Twitter/final/'+tag+'.json', 'a', encoding='utf-8') as f:
+                if 'RT' in data:
+                    return True
+                d = json.loads(data)
+                txt = d['text']
+                #print (txt)
+                if tag in txt:
+                    print(data)
+                    f.write(data)
+            return True
+
+        except BaseException as e:
+            print("Error on_data: %s" % str(e))
+        return True
+
+    def on_error(self, status):
+        print(status)
+        return True
+    def on_timeout(self):
+        return True
+
+
+stream = Stream(auth, Mylistener(), tweet_mode='extended')
+
+stream.filter(track=[tag], languages=['en'], locations=[-171.791110603, 18.91619, -66.96466, 71.3577635769],
+              filter_level='low')
+
