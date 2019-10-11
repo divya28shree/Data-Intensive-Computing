@@ -12,9 +12,12 @@ LEARNING OUTCOMES
 - Process the data collected for simple data analysis and charting (reproducible research).
 
 
-### Part 1: R basics implementaion for data visualization
-### Part 2: CDC Flu charts generation. Collect data from CDC site and generate respective charts.
-### Part 3: Twitter Application generation. Collect data from twitter and plot the charts. Compare it with the actual data in part 2. It provides the overview of the trends on twitter in flu season.
+### Part 1: 
+R basics implementaion for data visualization
+### Part 2: 
+CDC Flu charts generation. Collect data from CDC site and generate respective charts.
+### Part 3: 
+Twitter Application generation. Collect data from twitter and plot the charts. Compare it with the actual data in part 2. It provides the overview of the trends on twitter in flu season.
 
 
 ## Lab 2: DATA PIPELINE: AGGREGATION -->MR--> DATA PRODUCT
@@ -27,6 +30,9 @@ LEARNING OUTCOMES:
 - Learn a high level language-based data analysis by exploring Python as data processing language
 - Apply modern visualization methods and disseminate results using the web/mobile interface
 
-### Part 1: Data Collection from *New York Times, Twitter and Common Crawl*.
-### Part 2: Big Data Implementation *(HADOOP)*: Word Count implementation. Map will clean and parse the data sets into words, remove stop words, stem the words (ex: running to run) and reduce will count the useful words.
-### Part 3: Analyze and visualize: Visualize eaxch output in *Tableau*.
+### Part 1: 
+Data Collection from *New York Times, Twitter and Common Crawl*.
+### Part 2: 
+Big Data Implementation *(HADOOP)*: Word Count implementation. Map will clean and parse the data sets into words, remove stop words, stem the words (ex: running to run) and reduce will count the useful words.
+### Part 3: 
+Analyze and visualize: Visualize eaxch output in *Tableau*.
